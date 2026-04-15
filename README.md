@@ -17,12 +17,12 @@ Implementa breakpoints en 768px para tablet y 1024px para desktop.
 
 #### Mobile - 393px
 Diseño base sin media queries. Grid en 1 columna, sidebar oculto con display: none.
-![Mobile](mobile_393px.png)
+![Mobile](images/mobile.png)
 
 #### Tablet - 820px  
 Breakpoint 768px activo. Grid pasa a 2 columnas 250px 1fr. Sidebar visible.
-![Tablet](tablet_820px.png)
+![Tablet](images/tablet.png)
 
 #### Desktop - 1024px
 Breakpoint 1024px activo. Max-width 1200px centrado con margin: 0 auto.
-![Desktop](desktop_1024px.png)
+![Desktop](images/desktop.png)
