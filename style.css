@@ -1,60 +1,75 @@
 :root {
---color-primary: #890620;
---color-secondary: #b6465f;
---color-accent: #d65d45;
+--color-primary: #49078b;
+--color-secondary: #1f5a38;
+--color-third: #28a53d;
+--color-accent: #c2649b;
 --color-text: #ebe3e3;
 --radius: 8px;
 --shadow: 0 2px 8px rgba(0,0,0,0.1);
 --font-main: "Inter", "Segoe UI", Arial, sans-serif;
+--color-header-text:#ffffff;
 }
+
 header {
+        background: linear-gradient(var(--color-third),var(--color-accent));
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
         margin: 0 auto;
-        background: linear-gradient(to right, #890620, #b6465f);
-        padding: 1rem;
-       }
-.header-content {
-  display: flex;
-  align-items: center;
-}
+        background-color: var(--color-primary);
+        padding: 1rem 2rem;
+        width: 100%;
 
-.header-content img {
-  margin-left: 20px;
-  border-radius: 50%;
+       }    
+.sidebar{
+    margin: 0 auto;
+    padding: 0,5rem;
 }
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: white;
+    padding: 1rem;
 }
-
-.nav-links button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: var(--radius);
-  background-color: var(--color-primary);
-  transition: background 0.3s ease;
+.hero-contenido h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
 }
-
-.nav-links button a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-weight: bold;
+.hero-contenido h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    font-weight: 400;
 }
-
-.nav-links button:hover {
-  background-color: var(--color-accent);
-  transform: scale(1.03);
+.boton-cta {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 12px 28px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.boton-cta:hover{
+    background-color: #fff;
+    color: var(--color-primary);
+    transform: scale(1.05);
 }
 body {
-      background-color: var(--color-secondary);
+      background: linear-gradient(45deg, rgba(74,222,128,0.7), transparent),
+      radial-gradient(circle, #271539, #c2649b);
+     background-attachment: fixed;
       font-family: 'Montserrat', sans-serif;
       font-size: 16px;
-      line-height: 1.6;}
+      line-height: 1.6;
+      margin: 0;
+      color: var(--color-text);
+}
     
       h1, h2, h3 {
       font-family: 'Poppins', sans-serif;}   
@@ -62,7 +77,39 @@ body {
       h1 { font-size: 2.5rem; }
       h2 { font-size: 1.8rem; }
       h3 { font-size: 1.3rem; }
-
+.servicios {
+    padding: 2rem;
+}
+.servicios h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.tarjeta {
+    flex: 1 1 280px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: var(--color-text);
+    transition: transform 0.3s ease, box-shadow  0.3s ease;
+}
+.tarjeta h3 {
+    margin-top: 0;
+    color: var(--color-accent);
+}
+.tarjeta p {
+    color: var(--color-secondary);
+    line-height: 1.6;
+}
+.tarjeta :hover {
+    transform: translateY(-4px);
+    box-shadow: 1 10px 15px rgba(0,0,0,0.2);
+}
 .boton {
     background-color: var(--color-primary);
     color: var(--color-text);
@@ -78,16 +125,15 @@ body {
     max-width: 680px;
     margin: 20px auto;
     padding: 30px;
-    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    background: linear-gradient( var(--color-accent),var(--color-third), var(--color-secondary));
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     text-align: center;
-    color: #333;
+    color: #e6dcdc;
     border: 2px solid #fff;
 }
 .contenedor {
   display: flex; flex-wrap: wrap;
   gap: 1.25rem;
   padding: 2rem;
-
 }
