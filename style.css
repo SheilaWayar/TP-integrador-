@@ -7,23 +7,39 @@
 --radius: 8px;
 --shadow: 0 2px 8px rgba(0,0,0,0.1);
 --font-main: "Inter", "Segoe UI", Arial, sans-serif;
---color-header-text:#ffffff;
+--color-header-text:#eae6eb;
 }
 
 header {
-        background: linear-gradient(var(--color-third),var(--color-accent));
-        display: flex;
+      display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
         background-color: var(--color-primary);
         padding: 1rem 2rem;
         width: 100%;
-
        }    
 .sidebar{
+   color:var(--color-header-text);
     margin: 0 auto;
     padding: 0,5rem;
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+.nav-links {
+    display: flex;
+    gap: 35rem;
+}
+.nav-links a{
+    color: var(--color-header-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.nav-links a:hover{
+    color: var(--color-accent);
+    transform: translateY(-2px);
 }
 .hero {
     display: flex;
@@ -136,4 +152,126 @@ body {
   display: flex; flex-wrap: wrap;
   gap: 1.25rem;
   padding: 2rem;
+}
+footer{
+    display: flex;
+    padding: 0.5rem;
+    margin:auto;
+    background-color: var(--color-secondary);
+}
+.pagina-contacto {
+  background:linear-gradient(var(--color-accent),var(--color-secondary));
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+}
+
+.contenedor-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contenedor-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.form-contacto label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+  font-size: 14px;
+}
+
+.form-contacto input,
+.form-contacto textarea,
+.form-contacto select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box; /* Importante para que no se desborde */
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus,
+.form-contacto select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form-contacto textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-contacto .boton-cta {
+  width: 100%;
+  padding: 14px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+.form-contacto .boton-cta:hover {
+  background: #0056b3;
+}
+
+.link-volver {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}
+.link-volver:hover {
+  text-decoration: underline;
+}
+/* ---- VALIDACIÓN DEL FORM ---- */
+.form-contacto input,
+.form-contacto textarea,
+.form-contacto select {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Cuando el usuario ya interactuó y el campo es válido */
+.form-contacto input:not(:placeholder-shown):valid,
+.form-contacto textarea:not(:placeholder-shown):valid,
+.form-contacto select:valid {
+  border-color: #28a745; /* Verde */
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
+}
+
+/* Cuando el usuario ya interactuó y el campo es inválido */
+.form-contacto input:not(:placeholder-shown):invalid,
+.form-contacto textarea:not(:placeholder-shown):invalid,
+.form-contacto select:invalid {
+  border-color: #dc3545; /* Rojo */
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15);
+}
+
+/* Mensajito de error abajo del campo */
+.campo-error {
+  display: block;
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  height: 15px; /* Para que no salte el layout */
 }

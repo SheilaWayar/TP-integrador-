@@ -12,12 +12,13 @@
 </head>
 <body>
   <div class="grid-container">
-
     <aside class="sidebar">
     <h3>Sheila Sabrina Lamas Wayar</h3>
-    <a href="#Sobremi">Sobre Mi</a>
-   <a href="#Intereses">Intereses</a>
-    <a href="#servicios">Servicios</a>
+    <nav class="nav-links">
+      <a href="#Sobremi"><strong>Sobre Mi</strong></a>
+      <a href="#Intereses"><strong>Intereses</strong></a>
+    <a href="#servicios"><strong>Servicios</strong></a>
+    </nav>
     </aside>
     <main class="main">
       <section class="hero">
@@ -34,10 +35,12 @@
         <h2>Sobre Mi</h2>
         <img src="foto personal.jpeg" width="50">
         <p>Soy estudiante de 2do año de la carrera en Análisis de Sistemas y Desarrollo del software, con 28 años y apasionada por la tecnología. Resido en Salta, Argentina y busco combinar mi curiosidad por resolver problemas con el desarrollo de soluciones innovadoras</p>    
+        </div>
         <section id="Intereses" class="seccion-info">
         <h2>Mis Intereses</h2>
         <p>Me apasiona la programación en distintos lenguajes, la inteligencia artificial y el desarrollo de proyectos que impacten positivamente en la comunidad</p>
       </section>
+      <div class="ripple-panel" id="rippleSurface">
       </div>
       <section id="servicios" class="servicios">
         <h2>Mis Servicios</h2>
@@ -54,15 +57,17 @@
             <h3>Frontend</h3>
             <p><strong>Desarrollo Frontend:</strong> HTML, CSS3, diseño responsivo</p>
           </div>
-          
+          <div class="tarjeta">
+            <h3>Backend & Tools</h3>
+            <p><strong>Desarrollo Backend:</strong> Python</p>
+            <p><strong>Herramientas:</strong> Git/Github</p>
+          </div>
         </div>
       </section>
     </main>
-
-    <!-- PUNTO 5: Footer -->
     <footer class="footer" id="contacto">
       <div class="footer-contenido">
-        <p>@Sheila Sabrina Lamas Wayar</p>
+        <p><strong>Sheila Sabrina Lamas Wayar</strong></p>
         <div class="redes">
           <a href="https://github.com/SheilaWayar" target="_blank">Github</a>
           <a href="https://www.instagram.com/sheii.wayar/" target="_blank">Instagram</a>
