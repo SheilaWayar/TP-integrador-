@@ -373,3 +373,66 @@ footer{
   margin: 50px 0 30px 0;
   color: white; 
 }
+/* ===== Estilos página contacto ===== */
+.pagina-contacto {
+  background: var(--bg);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.contenedor-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contenedor-form h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-contacto label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.form-contacto input:focus,
+.form-contacto select:focus,
+.form-contacto textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.form-contacto button {
+  width: 100%;
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-contacto button:hover {
+  background: var(--accent);
+}
