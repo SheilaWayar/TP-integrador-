@@ -297,3 +297,34 @@ footer{
 @keyframes blink {
   50% { border-color: transparent }
 }
+/* ---- ÍCONOS DE REDES ---- */
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Espacio entre íconos */
+  margin: 30px 0;
+}
+
+.icono-red {
+  font-size: 28px; /* Tamaño del ícono */
+  color: #333; /* Color base */
+  text-decoration: none;
+  transition: all 0.3s ease; /* Animación suave */
+}
+
+.icono-red:hover {
+  transform: translateY(-5px); /* Se levanta al pasar el mouse */
+}
+
+/* Colores específicos al hacer hover */
+.icono-red .fa-instagram:hover {
+  color: #E4405F; /* Color Instagram */
+}
+
+.icono-red .fa-envelope:hover {
+  color: #007bff; /* Color para mail */
+}
+
+.icono-red .fa-github:hover {
+  color: #6e5494; /* Color GitHub */
+}
