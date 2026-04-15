@@ -274,4 +274,26 @@ footer{
   margin-top: -15px;
   margin-bottom: 15px;
   height: 15px; /* Para que no salte el layout */
+}/* ---- EFECTO TYPING ---- */
+.typing-effect {
+  width: 26ch; 
+  color:var(--color-header-text);
+  font-size: 3rem; 
+  font-weight: bold;
+  font-family: monospace;
+  overflow: hidden;
+  white-space: nowrap; 
+  border-right: 2px solid #4e5cd4;
+  margin: 50px auto;
+  animation: typing 2s steps(26), blink 0.5s step-end infinite;
+}
+
+/* Animación que "escribe" el texto */
+@keyframes typing {
+  from { width: 0 } /* Empieza en 0 */
+}
+
+/* Animación que hace parpadear el cursor */
+@keyframes blink {
+  50% { border-color: transparent }
 }
