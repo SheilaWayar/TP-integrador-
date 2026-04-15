@@ -340,3 +340,34 @@ footer{
   transform: translateY(-5px); /* Efecto al pasar el mouse */
   opacity: 0.8;
 }
+/* ---- CAJA DE INTERESES ---- */
+.caja-intereses {
+  background: linear-gradient(135deg, #2e8b57, #1a5a3c); /* Mismo verde degradado */
+  color: white;
+  padding: 30px;
+  border-radius: 15px; 
+  max-width: 800px; 
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.caja-intereses h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.caja-intereses p {
+  font-size: 18px;
+  line-height: 1.6; 
+  margin: 0;
+}
+
+/* Ajuste para el título de Servicios que queda abajo */
+.titulo-servicios {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px 0 30px 0;
+  color: white; 
+}
