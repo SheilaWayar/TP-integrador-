@@ -155,9 +155,11 @@ body {
 }
 footer{
     display: flex;
-    padding: 0.5rem;
-    margin:auto;
+    justify-content: center;
+    gap:  30px;
     background-color: var(--color-secondary);
+    text-align: center;
+    font-weight: 600;
 }
 .pagina-contacto {
   background:linear-gradient(var(--color-accent),var(--color-secondary));
@@ -297,34 +299,44 @@ footer{
 @keyframes blink {
   50% { border-color: transparent }
 }
-/* ---- ÍCONOS DE REDES ---- */
+/* ---- FOOTER ---- */
+.footer-principal {
+  background: #1a5a3c; /* Verde oscuro como en tu captura */
+  color: white;
+  text-align: center;
+  padding: 50px 20px; /* Más padding arriba y abajo */
+}
+
+.nombre-footer {
+  font-size: 28px; /* Nombre grande */
+  font-weight: 700;
+  margin-bottom: 35px; /* Separación con los links */
+}
+
+/* ---- LINKS CON ICONOS GRANDES Y SEPARADOS ---- */
 .redes-sociales {
   display: flex;
   justify-content: center;
-  gap: 25px; /* Espacio entre íconos */
-  margin: 30px 0;
+  gap: 80px; /* MUCHA SEPARACIÓN entre cada link */
+  flex-wrap: wrap; /* Si no entran, bajan de línea en celular */
 }
 
-.icono-red {
-  font-size: 28px; /* Tamaño del ícono */
-  color: #333; /* Color base */
+.link-red {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Separación entre ícono y palabra */
+  color: white; /* TODAS LAS PALABRAS EN BLANCO */
   text-decoration: none;
-  transition: all 0.3s ease; /* Animación suave */
+  font-size: 24px; /* PALABRAS GRANDES */
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.icono-red:hover {
-  transform: translateY(-5px); /* Se levanta al pasar el mouse */
+.link-red i {
+  font-size: 32px; /* ÍCONOS MÁS GRANDES */
 }
 
-/* Colores específicos al hacer hover */
-.icono-red .fa-instagram:hover {
-  color: #E4405F; /* Color Instagram */
-}
-
-.icono-red .fa-envelope:hover {
-  color: #007bff; /* Color para mail */
-}
-
-.icono-red .fa-github:hover {
-  color: #6e5494; /* Color GitHub */
+.link-red:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+  opacity: 0.8;
 }
